@@ -1,0 +1,12 @@
+The goal of this program is to read in a file of employees and allow the user to view the employees information, enter in the hours worked, and print out the employees paychecks
+The input for this program will be the file of employees that they will need and the hours that the employees worked.
+The output for this program will be the employees information from the file and the employees paychecks for working a certain amount of hours
+The program will start with a menu with two option to either load the employees from a file or to exit the program
+If they press 1 the program will read in the file containing the employees and will separate each line and divide each line by it's "," , store it in an array that will be passed to it's respective class
+The program will then have a different menu with four choices to either print off the employees information, to enter in the hours worked for each employee, to print off the employees pay checks and to exit the program
+If the user enters 1 the program will print off each employees information
+If the user enters 2 the program will ask for the user to enter the hours worked for each employee and will calculate how much each employee earned
+If the user enters 3 the program will print off the employees paychecks that was calculated when the user entered a 2
+If the user enters a 4 the program will exit
+I will use inheritance to give each of the four classes what it needs from the Employee class
+I will also need to account for input/output exceptions such as when the user does not have the specific file to read in and if the user tries to print off the employees paychecks before entering in the number of hours worked
