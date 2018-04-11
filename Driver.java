@@ -62,7 +62,7 @@ public class Driver
 		
 			catch(FileNotFoundException e)
 			{
-				e.printStackTrace();
+				System.out.println("File not found, close program and download file.");
 			}
 		
 			//prints out the second menu screen,and  asks for user input
@@ -89,14 +89,26 @@ public class Driver
 				//if the input is two it will ask the user how many hours the employees worked and will pass that and their pay to each employee to calculate it.
 				else if (input.equals("2")||input.equals("two"))
 				{
-					System.out.print("How many hours did all the employees work?");
+					System.out.println("How many hours did the Pharmacy Manager work?");
 					try
 					{
 						hours=s.nextInt();
 						s.nextLine();
 						pM[0].calculatePay(hours,50);
+
+						System.out.println("How many hours did the Staff Pharmacist work?");
+						hours=s.nextInt();
+						s.nextLine();
 						sP[0].calculatePay(hours,40);
+
+						System.out.println("How many hours did the Senior Technician work?");
+						hours=s.nextInt();
+						s.nextLine();
 						seT[0].calculatePay(hours,25);
+						
+						System.out.println("How many hours did the Staff Technician work?");
+						hours=s.nextInt();
+						s.nextLine();
 						stT[0].calculatePay(hours,20);
 						System.out.println("Pay calculated.");	
 					}
